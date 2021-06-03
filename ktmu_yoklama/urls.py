@@ -18,8 +18,11 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 
+# from yoklama.views import NameView
+from yoklama.views import YoklamaView
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # path('name/', NameView.as_view()),
     path('', include('yoklama.urls')),
 ]
 
